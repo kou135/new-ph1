@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/splide.min.css" />
+    <script src="./assets/js/splide.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body, html {
+    width: 100%;
+    overflow-x: hidden; /* 横スクロールを隠す */
+}
+
+      .splide_eventTrack {
+        overflow: visible;
+      }
+
+      .splide {
+        width: 100%; /* または具体的なピクセル値 */
+      }
+
+      .custom-top-left {
+        top: 14%; /* 14% の位置に設定 */
+        left: 6%; /* 6% の位置に設定 */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="grid grid-cols-5 gap-2 p-1 place-items-center">
+        <div class="col-span-1 col-start-1 col-end-2">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </div>
+        <div class="flex col-span-3 col-start-4 col-end-6 gap-8">
+          <div class="flex items-center gap-4">
+            <div>POSSEとは</div>
+            <div>イベント</div>
+            <div>日常生活</div>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <img src="./assets/img/icon-instagram.png" alt="Instagram" />
+            </div>
+            <div><img src="./assets/img/icon-twitter.png" alt="Twitter" /></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="justify-center items-center min-h-screen">
+      <div class="w-full">
+        <img
+          src="./assets/img/bg-mainvisual.jpg"
+          alt=""
+          class="w-full h-auto"
+        />
+      </div>
+      <section class="text-center space-y-20 w-100%">
+        <!--イベントの部分のsection-->
+        <div>
+          <div>イベント</div>
+          <div>Event</div>
+          <div>POSSEでは年内に多くのイベントを行っています</div>
+        </div>
+        <div class="splide" role="group" aria-label="Splideの基本的なHTML">
+          <div class="splide__track splide_eventTrack">
+            <div class="splide__list">
+              <div class="splide__slide">
+                <img src="./assets/img/img-event01.jpg" alt="" class="" />
+              </div>
+              <div class="splide__slide">
+                <img src="./assets/img/img-event02.jpg" alt="" class="" />
+              </div>
+              <div class="splide__slide">
+                <img src="./assets/img/img-event03.jpg" alt="" class="" />
+              </div>
+              <div class="splide__slide">
+                <img src="./assets/img/img-event04.jpg" alt="" class="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full space-y-20">
+        <div class="text-center mt-12">
+          <div>日常生活</div>
+          <div>Daily</div>
+          <div>様々な日々の生活について紹介します。</div>
+        </div>
+        <div class="bg-gray-200 w-2/3 relative h-96 mx-auto">
+          <div class="custom-top-left absolute w-full md:w-3/5 space-y-6">
+            <div class="flex space-x-4 items-end">
+              <span class="text-4xl font-bold text-blue-500">01</span>
+              <span class="font-bold text-xl">ミートアップ</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex">
+                <div><img src="./assets/img/icon-check.svg" alt="" /></div>
+                <div class="font-bold">毎週月曜日 19:00~22:00</div>
+              </div>
+              <div class="flex">
+                <div><img src="./assets/img/icon-check.svg" alt="" /></div>
+                <div class="font-bold">会員参加</div>
+              </div>
+              <div class="leading-relaxed">
+                全体ミーティングです。<br />
+                各局からのお知らせでや、講演会など目白押しです。
+              </div>
+            </div>
+          </div>
+          <div class="absolute right-0 -top-4 w-1/2">
+            <img
+              src="./assets/img/img-daily01.jpg"
+              alt=""
+              class="rounded-2xl"
+            />
+          </div>
+        </div>
+        <div class="bg-gray-200 w-2/3 relative h-96 mx-auto">
+          <div class="custom-top-left absolute w-full md:w-3/5 space-y-6">
+            <div class="flex space-x-4 items-end">
+              <span class="text-4xl font-bold text-blue-500">01</span>
+              <span class="font-bold text-xl">ミートアップ</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex">
+                <div><img src="./assets/img/icon-check.svg" alt="" /></div>
+                <div class="font-bold">毎週月曜日 19:00~22:00</div>
+              </div>
+              <div class="flex">
+                <div><img src="./assets/img/icon-check.svg" alt="" /></div>
+                <div class="font-bold">会員参加</div>
+              </div>
+              <div class="leading-relaxed">
+                全体ミーティングです。<br />
+                各局からのお知らせでや、講演会など目白押しです。
+              </div>
+            </div>
+          </div>
+          <div class="absolute right-0 -top-4 w-1/2">
+            <img
+              src="./assets/img/img-daily01.jpg"
+              alt=""
+              class="rounded-2xl"
+            />
+          </div>
+        </div>
+        <div class="bg-gray-200 w-2/3 relative h-96 mx-auto">
+          <div class="custom-top-left absolute w-full md:w-3/5 space-y-6">
+            <div class="flex space-x-4 items-end">
+              <span class="text-4xl font-bold text-blue-500">01</span>
+              <span class="font-bold text-xl">ミートアップ</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex">
+                <div><img src="./assets/img/icon-check.svg" alt="" /></div>
+                <div class="font-bold">毎週月曜日 19:00~22:00</div>
+              </div>
+              <div class="flex">
+                <div><img src="./assets/img/icon-check.svg" alt="" /></div>
+                <div class="font-bold">会員参加</div>
+              </div>
+              <div class="leading-relaxed">
+                全体ミーティングです。<br />
+                各局からのお知らせでや、講演会など目白押しです。
+              </div>
+            </div>
+          </div>
+          <div class="absolute right-0 -top-4 w-1/2">
+            <img
+              src="./assets/img/img-daily01.jpg"
+              alt=""
+              class="rounded-2xl"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script>
+ const splideContainer = document.querySelector('.splide');
+  const splideWidth = splideContainer.clientWidth; // コンテナの現在の幅を取得
+  const fixedWidthValue = splideWidth / 5; // コンテナの幅の1/5を計算
+
+      new Splide(".splide", {
+        type: "loop",
+        width: '100%',
+        rewind: false,
+        fixedWidth:  fixedWidthValue + 'px', // コンテナの幅の1/5
+        fixedHeight: "auto",
+        gap: "40px",
+        pauseOnHover: true,
+        perPage: 3,
+        perMove: 1,
+        autoplay: true, // 自動再生を有効にする
+        interval: 3000, // 自動再生の間隔（ミリ秒）
+        pagination: true,
+        breakpoints: {
+          768: {
+            pagination: true,
+            perPage: 1,
+          },
+        },
+      }).mount();
+
+    </script>
+  </body>
+</html>
